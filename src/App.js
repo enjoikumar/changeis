@@ -10,7 +10,7 @@ function App() {
       .then(response => response.json())
       .then(data => {
         setChangeData(data.data);
-        console.log(data.data); // Log the fetched data
+        console.log(data.data);
       })
       .catch(error => console.error('Error fetching data:', error));
   }, []);

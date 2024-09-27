@@ -9,12 +9,3 @@ export default function Card(props) {
     </div>
   );
 }
-
-
-// Copy of the data coming through
-
-// {
-//   title: "Ducimus et sed et.",
-//   description: "Est vel assumenda soluta nostrum dolores non. Qui alias molestiae rerum quidem perspiciatis sed qui. Consequatur numquam dicta non expedita quia.",
-//   url: "https://picsum.photos/380/480"
-//   },
