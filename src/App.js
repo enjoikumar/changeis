@@ -15,16 +15,25 @@ function App() {
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 
+  const cards = changeData.map(item => {
+    return (
+      <Card
+        key={item.id}
+        item={item}
+      />
+    )
+  })
+
   return (
     <div className="App">
       card component will go here
       {/* <Card data={changeData} /> */}
-
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-
+      <div className='card-container'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 }

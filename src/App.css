@@ -1,9 +1,24 @@
-.card{
+.card-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 20px; 
+  row-gap: 20px; 
+  padding: 100px; 
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 20px);
 }
 
-.card-image{}
+.card-image {
+  border-radius: 4px;
+}
 
-.card-title{}
+.card-title {
+  margin: 0;
+}
 
-.card-description{}
+.card-description {
+}
