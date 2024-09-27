@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-export default function Card() {
+export default function Card(props) {
   return (
     <div className='card'>
-      <img className='card-image' src="https://picsum.photos/380/480" />
-      <h2 className='card-title'>Ducimus et sed et.</h2>
-      <p className='card-description'>Est vel assumenda soluta nostrum dolores non. Qui alias molestiae rerum quidem perspiciatis sed qui. Consequatur numquam dicta non expedita quia.</p>
+      <img className='card-image' src={props.item.url} alt={props.item.title} />
+      <h2 className='card-title'>{props.item.title}</h2>
+      <p className='card-description'>{props.item.description}</p>
     </div>
-  )
+  );
 }
 
 
